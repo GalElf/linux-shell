@@ -2,6 +2,7 @@
 // and activate an coammnd that the user insert
 // this program implement pipe, redirection and normal command
 // cd is not supperted
+// adding something to test for
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -533,7 +534,7 @@ char *createFile(char *str)
 }
 
 // free all the memory allocation
-void freeArr(char **arr)
+void freeArr(char **arr, int a)
 {
 	int i = 0;
 	while (arr[i] != NULL)
